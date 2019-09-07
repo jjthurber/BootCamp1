@@ -41,7 +41,7 @@ fs.readFile('listings.json', 'utf8', function(err, data) {
   listingData = data;
   server = http.createServer(requestHandler);
   server.listen(port, function(){
-    console.log('Server listening on: http//localhost:' + port);
+    console.log('Server listening on: http://localhost:' + port);
   });
   /*
     This callback function should save the data in the listingData variable, 
